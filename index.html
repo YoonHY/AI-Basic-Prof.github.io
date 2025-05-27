@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>K-팝 소개</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@400;500;700&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Noto Sans KR', 'sans-serif'],
+                    },
+                    keyframes: {
+                        fadeIn: {
+                            '0%': { opacity: '0', transform: 'translateY(10px)' },
+                            '100%': { opacity: '1', transform: 'translateY(0)' }
+                        }
+                    },
+                    animation: {
+                        fadeIn: 'fadeIn 0.8s ease-out forwards'
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .animate-delay-200 {
+            animation-delay: 200ms;
+        }
+        .animate-delay-400 {
+            animation-delay: 400ms;
+        }
+        .animate-delay-600 {
+            animation-delay: 600ms;
+        }
+        .animate-delay-800 {
+            animation-delay: 800ms;
+        }
+        .animate-delay-1000 {
+            animation-delay: 1000ms;
+        }
+    </style>
+</head>
+<body class="bg-gradient-to-br from-indigo-100 via-purple-50 to-pink-100 min-h-screen">
+    <!-- 네비게이션 바 -->
+    <nav class="backdrop-blur-xl bg-white/30 border-b border-white/40 sticky top-0 z-50">
+        <div class="container mx-auto px-4">
+            <div class="flex justify-between items-center h-16">
+                <a href="/" class="text-xl font-bold text-indigo-800">Global Pop Culture</a>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-indigo-800 font-bold hover:text-indigo-800 transition-colors duration-300">
+                        K-Pop
+                    </a>
+                    <a href="uspop.html" class="text-indigo-600 hover:text-indigo-800 transition-colors duration-300">
+                        US Pop
+                    </a>
+                    <a href="ukpop.html" class="text-indigo-600 hover:text-indigo-800 transition-colors duration-300">
+                        UK Pop
+                    </a>
+                    <a href="jpop.html" class="text-indigo-600 hover:text-indigo-800 transition-colors duration-300">
+                        J-Pop
+                    </a>
+                    <a href="latinpop.html" class="text-indigo-600 hover:text-indigo-800 transition-colors duration-300">
+                        Latin Pop
+                    </a>
+                </div>
+                <!-- 모바일 메뉴 버튼 -->
+                <button class="md:hidden text-indigo-600 hover:text-indigo-800">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </div>
+        <!-- 모바일 메뉴 -->
+        <div class="md:hidden hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1">
+                <a href="index.html" class="block px-3 py-2 text-indigo-800 font-bold hover:text-indigo-800 hover:bg-white/50 rounded-md">
+                    K-Pop
+                </a>
+                <a href="uspop.html" class="block px-3 py-2 text-indigo-600 hover:text-indigo-800 hover:bg-white/50 rounded-md">
+                    US Pop
+                </a>
+                <a href="ukpop.html" class="block px-3 py-2 text-indigo-600 hover:text-indigo-800 hover:bg-white/50 rounded-md">
+                    UK Pop
+                </a>
+                <a href="jpop.html" class="block px-3 py-2 text-indigo-600 hover:text-indigo-800 hover:bg-white/50 rounded-md">
+                    J-Pop
+                </a>
+                <a href="latinpop.html" class="block px-3 py-2 text-indigo-600 hover:text-indigo-800 hover:bg-white/50 rounded-md">
+                    Latin Pop
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mx-auto px-4 py-8 max-w-4xl">
+        <div class="backdrop-blur-xl bg-white/30 rounded-3xl shadow-2xl p-8 border border-white/40 animate-fadeIn">
+            <div class="flex justify-center mb-8 animate-fadeIn animate-delay-200">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/09/Flag_of_South_Korea.svg" 
+                     alt="대한민국 국기" 
+                     class="w-32 h-32 object-contain drop-shadow-lg">
+            </div>
+            <h1 class="text-4xl md:text-5xl font-bold text-center text-indigo-800 mb-12 tracking-tight drop-shadow-sm animate-fadeIn animate-delay-400">
+                K-팝의 세계에 오신 것을 환영합니다!
+            </h1>
+            
+            <div class="grid gap-8">
+                <div class="group backdrop-blur-md bg-white/40 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-white/50 animate-fadeIn animate-delay-600">
+                    <h2 class="text-2xl font-bold text-indigo-700 mb-4 pb-2 border-b border-indigo-200/50">
+                        K-pop의 역사
+                    </h2>
+                    <div class="space-y-4">
+                        <div class="p-4 bg-indigo-50/50 rounded-lg">
+                            <h3 class="text-lg font-semibold text-indigo-600 mb-2">초기 발전 (1990년대)</h3>
+                            <p class="text-gray-600">
+                                서태지와 아이들, H.O.T., 젝스키스 등이 등장하며 K-pop의 기반을 다졌습니다. 
+                                이 시기에는 힙합, R&B 등 다양한 장르가 도입되었습니다.
+                            </p>
+                        </div>
+                        <div class="p-4 bg-indigo-50/50 rounded-lg">
+                            <h3 class="text-lg font-semibold text-indigo-600 mb-2">글로벌 확장 (2000년대)</h3>
+                            <p class="text-gray-600">
+                                보아, 동방신기, 빅뱅 등이 일본과 아시아 시장에서 성공을 거두며 
+                                K-pop의 글로벌 진출의 기반을 마련했습니다.
+                            </p>
+                        </div>
+                        <div class="p-4 bg-indigo-50/50 rounded-lg">
+                            <h3 class="text-lg font-semibold text-indigo-600 mb-2">세계적 성공 (2010년대 이후)</h3>
+                            <p class="text-gray-600">
+                                BTS, BLACKPINK 등이 전 세계적으로 성공하며 K-pop은 
+                                글로벌 음악 시장의 주요 장르로 자리매김했습니다.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group backdrop-blur-md bg-white/40 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-white/50 animate-fadeIn animate-delay-800">
+                    <h2 class="text-2xl font-bold text-indigo-700 mb-4 pb-2 border-b border-indigo-200/50">
+                        BTS (방탄소년단)
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        세계적인 K-팝 그룹으로, 글로벌 음악 시장에서 큰 성공을 거두었습니다. 
+                        'Dynamite', 'Butter' 등의 히트곡으로 유명합니다.
+                    </p>
+                    <div class="mt-4 p-4 bg-indigo-50/50 rounded-lg">
+                        <h3 class="text-lg font-semibold text-indigo-600 mb-2">최근 소식</h3>
+                        <p class="text-gray-600">
+                            지난 12월, 모든 멤버의 군입대가 완료되어 2025년 완전체 컴백을 앞두고 있습니다. 
+                            각 멤버들은 군 복무 중에도 개인 활동을 통해 팬들과 소통하고 있습니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="group backdrop-blur-md bg-white/40 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-white/50 animate-fadeIn animate-delay-1000">
+                    <h2 class="text-2xl font-bold text-indigo-700 mb-4 pb-2 border-b border-indigo-200/50">
+                        BLACKPINK (블랙핑크)
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        YG 엔터테인먼트 소속의 4인조 걸그룹으로, 
+                        'How You Like That', 'Pink Venom' 등의 곡으로 세계적인 인기를 얻고 있습니다.
+                    </p>
+                    <div class="mt-4 p-4 bg-indigo-50/50 rounded-lg">
+                        <h3 class="text-lg font-semibold text-indigo-600 mb-2">최근 소식</h3>
+                        <p class="text-gray-600">
+                            'BORN PINK' 월드투어를 성공적으로 마무리하며, 
+                            전 세계 180만 관객을 동원하는 대기록을 세웠습니다. 
+                            현재 각 멤버들은 개인 활동을 통해 새로운 도전을 이어가고 있습니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="group backdrop-blur-md bg-white/40 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-white/50 animate-fadeIn animate-delay-1000">
+                    <h2 class="text-2xl font-bold text-indigo-700 mb-4 pb-2 border-b border-indigo-200/50">
+                        NewJeans (뉴진스)
+                    </h2>
+                    <p class="text-gray-700 leading-relaxed">
+                        HYBE 소속의 5인조 걸그룹으로, 
+                        'Hype Boy', 'Attention' 등의 곡으로 신세대 아이돌로서의 입지를 다지고 있습니다.
+                    </p>
+                    <div class="mt-4 p-4 bg-indigo-50/50 rounded-lg">
+                        <h3 class="text-lg font-semibold text-indigo-600 mb-2">최근 소식</h3>
+                        <p class="text-gray-600">
+                            'Get Up' 앨범으로 빌보드 200 차트 1위를 달성하며 
+                            K-pop 걸그룹 최단 기간 1위 기록을 세웠습니다. 
+                            최근 'Super Shy'와 'ETA'로 글로벌 차트를 석권하고 있습니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="group backdrop-blur-md bg-white/40 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-white/50 animate-fadeIn animate-delay-1000">
+                    <h2 class="text-2xl font-bold text-indigo-700 mb-4 pb-2 border-b border-indigo-200/50">
+                        K-팝의 특징
+                    </h2>
+                    <div class="space-y-4">
+                        <div class="p-4 bg-indigo-50/50 rounded-lg">
+                            <h3 class="text-lg font-semibold text-indigo-600 mb-2">음악적 특징</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-center text-gray-600">
+                                    <span class="w-2 h-2 bg-indigo-500 rounded-full mr-3 shadow-sm"></span>
+                                    다양한 장르의 융합 (힙합, R&B, 일렉트로닉, 록 등)
+                                </li>
+                                <li class="flex items-center text-gray-600">
+                                    <span class="w-2 h-2 bg-indigo-500 rounded-full mr-3 shadow-sm"></span>
+                                    다국어 가사 사용 (한국어, 영어, 일본어 등)
+                                </li>
+                                <li class="flex items-center text-gray-600">
+                                    <span class="w-2 h-2 bg-indigo-500 rounded-full mr-3 shadow-sm"></span>
+                                    정교한 음악 제작 시스템
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-4 bg-indigo-50/50 rounded-lg">
+                            <h3 class="text-lg font-semibold text-indigo-600 mb-2">산업적 특징</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-center text-gray-600">
+                                    <span class="w-2 h-2 bg-indigo-500 rounded-full mr-3 shadow-sm"></span>
+                                    체계적인 연습생 시스템
+                                </li>
+                                <li class="flex items-center text-gray-600">
+                                    <span class="w-2 h-2 bg-indigo-500 rounded-full mr-3 shadow-sm"></span>
+                                    소속사 중심의 그룹 운영
+                                </li>
+                                <li class="flex items-center text-gray-600">
+                                    <span class="w-2 h-2 bg-indigo-500 rounded-full mr-3 shadow-sm"></span>
+                                    글로벌 마케팅 전략
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="p-4 bg-indigo-50/50 rounded-lg">
+                            <h3 class="text-lg font-semibold text-indigo-600 mb-2">문화적 영향</h3>
+                            <ul class="space-y-2">
+                                <li class="flex items-center text-gray-600">
+                                    <span class="w-2 h-2 bg-indigo-500 rounded-full mr-3 shadow-sm"></span>
+                                    한류 문화의 중심
+                                </li>
+                                <li class="flex items-center text-gray-600">
+                                    <span class="w-2 h-2 bg-indigo-500 rounded-full mr-3 shadow-sm"></span>
+                                    글로벌 팬덤 문화 형성
+                                </li>
+                                <li class="flex items-center text-gray-600">
+                                    <span class="w-2 h-2 bg-indigo-500 rounded-full mr-3 shadow-sm"></span>
+                                    한국 문화의 세계화
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group backdrop-blur-md bg-white/40 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-white/50 animate-fadeIn animate-delay-1000">
+                    <h2 class="text-2xl font-bold text-indigo-700 mb-4 pb-2 border-b border-indigo-200/50">
+                        K-팝의 미래
+                    </h2>
+                    <div class="p-4 bg-indigo-50/50 rounded-lg">
+                        <p class="text-gray-600">
+                            K-pop은 계속해서 혁신과 변화를 거듭하며 글로벌 음악 시장에서 
+                            더욱 강력한 영향력을 행사하고 있습니다. 메타버스, AI, 블록체인 등 
+                            최신 기술을 활용한 새로운 형태의 콘텐츠와 팬 서비스가 등장하고 있으며, 
+                            이를 통해 K-pop의 미래는 더욱 밝아질 것으로 전망됩니다.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="group backdrop-blur-md bg-white/40 rounded-2xl p-6 shadow-lg hover:shadow-2xl transition-all duration-300 hover:-translate-y-1 border border-white/50 animate-fadeIn animate-delay-1000">
+                    <h2 class="text-2xl font-bold text-indigo-700 mb-4 pb-2 border-b border-indigo-200/50">
+                        최근 K-팝 트렌드
+                    </h2>
+                    <div class="p-4 bg-indigo-50/50 rounded-lg">
+                        <p class="text-gray-600">
+                            2024년 K-팝은 더욱 글로벌화되어 있으며, 
+                            다양한 장르 실험과 독창적인 콘셉트로 세계 음악 시장을 선도하고 있습니다. 
+                            특히 메타버스와 AI 기술을 활용한 혁신적인 팬 서비스가 주목받고 있습니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // 모바일 메뉴 토글
+        const menuButton = document.querySelector('button');
+        const mobileMenu = document.querySelector('.md\\:hidden.hidden');
+        
+        menuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+</body>
+</html> 
